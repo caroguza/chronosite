@@ -40,9 +40,6 @@
                     </button>
                     <a class="navbar-brand" href="{{PAGES.index.url}}">
                         {% block logo %}
-                            <!--<center>
-                                <img src="/static/logo-black.png" id="brand-img"/>
-                            </center>-->
                         {% endblock %}
                         <h1 style="white-space: normal">Syncroplicity</h1>
                     </a>
@@ -52,32 +49,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{PAGES.index.url}}">{{PAGES.index.title}}</a>
                         </li>
-                        <!--<li class="nav-item">
-                            <a class="nav-link" href="{{PAGES.team.url}}">{{PAGES.team.title}}</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{PAGES.blog.url}}">{{PAGES.blog.title}}</a>
-                        </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{PAGES.projects.url}}">Projects</a>
+                            <a class="nav-link" href="{{PAGES.projects.url}}">{{PAGES.projects.title}}</a>
                         </li>
                     </ul>
                         
                     <h1 class="nav-item main-brand-link d-none d-sm-block {% block enableLogo %}{% endblock %}">
-                        {{ self.logo() }}
                         <a href="{{PAGES.index.url}}">Syncroplicity</a><br/>
                         <small><i class="fa fa-angle-double-right"></i>  {{ self.subtitle() }} <i class="fa fa-angle-double-left"></i></small>
                     </h1>
 
                     <ul class="navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{PAGES.about.url}}">{{PAGES.about.title}}</a>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{PAGES.get_involved.url}}">{{PAGES.get_involved.title}}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="beta-btn nav-link btn btn-success btn-shadow" href="{{PAGES.index.url}}#consulting" onmousedown="/*this.classList.add('hinge'), true*/">
-                                Hire Us 
-                            </a>
-                        </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{PAGES.about.url}}">{{PAGES.about.title}}</a>
+                      </li>
                     </ul>
                 </div>
             </nav>
@@ -100,7 +88,7 @@
                 {% block footersocial %}
                     {% include 'social.html' %}
                 {% endblock %}
-                {% block footercopyright %}<small>Syncroplicity © 2019</small>{% endblock %}
+                {% block footercopyright %}<small>Syncroplicity © 2020</small>{% endblock %}
             </div>
             {% block footerafter %}
             {% endblock %}

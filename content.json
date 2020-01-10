@@ -9,49 +9,39 @@
         },
         "about": {
             "title": "Contact us",
-            "url": "/about.html",
-            "template": "about.html"
+            "url": "/contact_us.html",
+            "template": "contact_us.html"
         },
         "projects": {
             "title": "Syncroplicity Project",
-            "url": "/projects.html",
-            "template": "projects.html"
+            "url": "/project.html",
+            "template": "project.html"
         },
         "get_involved": {
             "title": "Get Involved",
-            "url": "/team.html",
-            "template": "team.html"
-        },
-        "team": {
-            "title": "Projects",
-            "url": "/projects.html",
-            "template": "projects.html"
-        },
-        "blog": {
-            "title": "Projects",
-            "url": "/projects.html",
-            "template": "projects.html"
+            "url": "/get_involved.html",
+            "template": "get_involved.html"
         }
     },
     "SOCIAL": {
         "Twitter": {
             "url": "https://twitter.com/",
-            "title": "Monadical Twitter",
+            "title": "Syncroplicity Twitter",
             "icon": "twitter"
         },
         "Facebook": {
             "url": "https://facebook.com/",
-            "title": "Monadical Facebook",
+            "title": "Syncroplicity Facebook",
             "icon": "facebook"
         },
         "LinkedIn": {
             "url": "https://linkedin.com/company/",
-            "title": "Monadical LinkedIn",
+            "title": "Syncroplicity LinkedIn",
             "icon": "linkedin"
         },
         "Github": {
             "url": "https://github.com/",
-            "title": "Monadical Github",
+            "title": "Syncroplicity Github",
             "icon": "github"
         }
     }

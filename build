@@ -17,7 +17,6 @@ mkdir -p output/posts
 cp -r static output/static
 cp static/favicon.ico output/favicon.ico
 ./server --pages > output/pages.txt
-./server --posts > output/posts.txt
 
 echo ""
 echo "$blue[+] Saving pages as static HTML to output/...$normal"
@@ -41,7 +40,7 @@ echo "$blue[^] Pushing build to origin/live...$normal"
 git push origin "$current_branch":live --force
 
 echo "$blue[^] Deploying output/ to https://monadical.com...$normal"
-rsync -r output/ grape:/opt/monadical.www/output
+#rsync -r output/ grape:/opt/monadical.www/output
 # ssh monadical.com "cd /opt/monadical.com; git checkout -f live; git pull"
 
 echo ""
