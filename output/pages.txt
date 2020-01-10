@@ -1,0 +1,6 @@
+paginas
+{'/index.html': {'title': 'Home', 'url': '/index.html', 'template': 'index.html'}, '/contact_us.html': {'title': 'Contact us', 'url': '/contact_us.html', 'template': 'contact_us.html'}, '/project.html': {'title': 'Syncroplicity Project', 'url': '/project.html', 'template': 'project.html'}, '/get_involved.html': {'title': 'Get Involved', 'url': '/get_involved.html', 'template': 'get_involved.html'}}
+http://127.0.0.1:5000/index.html
+http://127.0.0.1:5000/contact_us.html
+http://127.0.0.1:5000/project.html
+http://127.0.0.1:5000/get_involved.html
