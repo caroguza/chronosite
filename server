@@ -6,10 +6,11 @@ import json
 from datetime import datetime
 
 from flask import Flask, render_template, redirect, request
+from flask_mail import Mail, Message
 
 from app.form import ContactForm, csrf
 
-
+mail = Mail()
 ### Config
 app = Flask(__name__)
 CONFIG_FILE = 'content.json'
@@ -19,6 +20,17 @@ HOST = 'http://127.0.0.1:5000'
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 csrf.init_app(app)
+
+#Configuring Flask-Mail
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'testmonadical@gmail.com'
+app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+#app.config['TESTING'] = True
+mail.init_app(app)
+
 
 def load_config(fname=CONFIG_FILE):
     """read the content.json file and load it as a dictionary"""
@@ -55,18 +67,25 @@ def render_page(path):
 def contact_form():
     form = ContactForm()
     if form.validate_on_submit():
-        index()
+        send_message(request.form)
+        return index()
+        
     else:
         page = PAGES['/contact_us.html']
         return render_template(page['template'], now=datetime.now(), **CONFIG, **page, form=form)
 
+def send_message(message):
+    msg = Message(message.get('subject'), sender = message.get('email'),
+            recipients = ['testmonadical@gmail.com'],
+            body= f"{message.get('message')}. Send by {message.get('email')}"
+    ) 
+    mail.send(msg)
+       
+
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == '--pages':
         # just print list of page urls
-        #print('\n'.join(HOST + url for url in PAGES.keys()))
-        """ elif len(sys.argv) > 1 and sys.argv[1] == '--posts':
-        # just print list of post urls
-        print('\n'.join(HOST + url for url in POSTS.keys())) """
+        print('\n'.join(HOST + url for url in PAGES.keys()))
     else:
         # run the flask http server
         app.run()
