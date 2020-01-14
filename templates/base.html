@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One" >
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link href="https://fonts.googleapis.com/css?family=Cairo|Open+Sans&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="/static/bootstrap4-pleasant.min.css">
         <link rel="stylesheet" href="/static/main.css">
 
@@ -27,7 +28,6 @@
         {% block header %}
         <header>
             <a id="top"></a>
-
             {% block headerbefore %}
             {% endblock %}
 
@@ -36,11 +36,11 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="{{PAGES.index.url}}">
+                    <b><a class="navbar-brand" href="{{PAGES.index.url}}">
                         {% block logo %}
                         {% endblock %}
-                        <h1 style="white-space: normal">Syncroplicity</h1>
-                    </a>
+                        <h2 style="white-space: normal">Syncroplicity</h2>
+                    </b></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav navbar-left ">
@@ -53,7 +53,7 @@
                     </ul>
                         
                     <h1 class="nav-item main-brand-link d-none d-sm-block {% block enableLogo %}{% endblock %}">
-                        <a href="{{PAGES.index.url}}">Syncroplicity</a><br/>
+                        <a href="{{PAGES.index.url}}"><b><span style="color:#41a428">Syncro</span>plicity</b></a><br/>
                         <small><i class="fa fa-angle-double-right"></i>  {{ self.subtitle() }} <i class="fa fa-angle-double-left"></i></small>
                     </h1>
 
