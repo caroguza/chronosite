@@ -4,22 +4,22 @@
     "PAGES": {
         "index": {
             "title": "Home",
-            "url": "/index.html",
+            "url": "./index.html",
             "template": "index.html"
         },
         "about": {
             "title": "Contact us",
-            "url": "/contact_us.html",
+            "url": "./contact_us.html",
             "template": "contact_us.html"
         },
         "projects": {
             "title": "Syncroplicity Project",
-            "url": "/project.html",
+            "url": "./project.html",
             "template": "project.html"
         },
         "get_involved": {
             "title": "Get Involved",
-            "url": "/get_involved.html",
+            "url": "./get_involved.html",
             "template": "get_involved.html"
         }
     },

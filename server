@@ -57,8 +57,9 @@ def favicon():
 
 @app.route('/<path>')
 def render_page(path):
-    page = PAGES[f'/{path}']
-    if page['url'] == '/contact_us.html':
+    page = PAGES[f'./{path}']
+    print('esta es la ruta', path)
+    if page['url'] == './contact_us.html':
         form = ContactForm()
         return render_template(page['template'], now=datetime.now(), **CONFIG, **page, form=form)
     return render_template(page['template'], now=datetime.now(), **CONFIG, **page)
@@ -71,7 +72,7 @@ def contact_form():
         return index()
         
     else:
-        page = PAGES['/contact_us.html']
+        page = PAGES['./contact_us.html']
         return render_template(page['template'], now=datetime.now(), **CONFIG, **page, form=form)
 
 def send_message(message):
