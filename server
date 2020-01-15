@@ -58,8 +58,8 @@ def favicon():
 @app.route('/<path>')
 def render_page(path):
     page = PAGES[f'/{path}']
-    page['url'] = f".{page['url']}"
-    if page['url'] == './contact_us.html':
+  
+    if page['url'] == '/contact_us.html':
         form = ContactForm()
         return render_template(page['template'], now=datetime.now(), **CONFIG, **page, form=form)
     return render_template(page['template'], now=datetime.now(), **CONFIG, **page)
