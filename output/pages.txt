@@ -1,4 +1,4 @@
-http://127.0.0.1:5000./index.html
-http://127.0.0.1:5000./contact_us.html
-http://127.0.0.1:5000./project.html
-http://127.0.0.1:5000./get_involved.html
+http://127.0.0.1:5000/index.html
+http://127.0.0.1:5000/contact_us.html
+http://127.0.0.1:5000/project.html
+http://127.0.0.1:5000/get_involved.html
