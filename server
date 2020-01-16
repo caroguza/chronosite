@@ -5,12 +5,14 @@ import sys
 import json
 from datetime import datetime
 
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
+from flask_toastr import Toastr
 
 from app.form import ContactForm, csrf
 
 mail = Mail()
+toastr = Toastr()
 ### Config
 app = Flask(__name__)
 CONFIG_FILE = 'content.json'
@@ -30,6 +32,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 #app.config['TESTING'] = True
 mail.init_app(app)
+toastr.init_app(app)
 
 
 def load_config(fname=CONFIG_FILE):
@@ -69,9 +72,10 @@ def contact_form():
     form = ContactForm()
     if form.validate_on_submit():
         send_message(request.form)
+        flash("Message sent", 'success')
         return index()
-        
     else:
+        flash("The contact form has errors", 'error')
         page = PAGES['/contact_us.html']
         return render_template(page['template'], now=datetime.now(), **CONFIG, **page, form=form)
 

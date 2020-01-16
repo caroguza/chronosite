@@ -1,4 +1,6 @@
 Flask
 Flask-WTF==0.14.2
 Flask-Mail==0.9.1
+Flask-Toastr==0.5.2
+
 
