@@ -362,11 +362,11 @@ a.btn {
     border-radius: 6px;
 }
 .btn-shadow.btn-success:hover, .btn-shadow.btn-outline-success:hover {
-    background-color: #17b06b;
+    background-color: black;
 }
 .btn-shadow.btn-success:hover, .btn-shadow.btn-outline-success:hover {
-    -webkit-box-shadow: 5px 5px 0 #43cb8e, 4px 4px 0 #43cb8e, 3px 3px 0 #43cb8e, 2px 2px 0 #43cb8e, 1px 1px 0 #43cb8e;
-    box-shadow: 5px 5px 0 #43cb8e, 4px 4px 0 #43cb8e, 3px 3px 0 #43cb8e, 2px 2px 0 #43cb8e, 1px 1px 0 #43cb8e;
+    -webkit-box-shadow: 5px 5px 0 #a1bbb0, 4px 4px 0 #a1bbb0, 3px 3px 0 #a1bbb0, 2px 2px 0 #a1bbb0, 1px 1px 0 #a1bbb0;
+    box-shadow: 5px 5px 0 #a1bbb0, 4px 4px 0 #a1bbb0, 3px 3px 0 #a1bbb0, 2px 2px 0 #a1bbb0, 1px 1px 0 #a1bbb0;
     -webkit-transform: translate(-2px, -2px);
     -o-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
@@ -378,14 +378,14 @@ a.btn {
     cursor: pointer;
 }
 .btn-success, .btn-success:hover, .btn-success:focus, .btn-success:active {
-    color: #c1f8c2;
+    color: #eee;
 }
 .btn-shadow.btn-success, .btn-shadow.btn-success.focus, .btn-shadow.btn-success:focus, .btn-shadow.btn-outline-success, .btn-shadow.btn-outline-success.focus, .btn-shadow.btn-outline-success:focus {
-    -webkit-box-shadow: 3px 3px 0 #43cb8e, 2px 2px 0 #43cb8e, 1px 1px 0 #43cb8e;
-    box-shadow: 3px 3px 0 #43cb8e, 2px 2px 0 #43cb8e, 1px 1px 0 #43cb8e;
+    -webkit-box-shadow: 3px 3px 0 #a1bbb0, 2px 2px 0 #a1bbb0, 1px 1px 0 #a1bbb0;
+    box-shadow: 3px 3px 0 #a1bbb0, 2px 2px 0 #a1bbb0, 1px 1px 0 #a1bbb0;
 }
 .btn-shadow.btn-success, .btn-shadow.btn-outline-success {
-    border-color: #34be80;
+    border-color: #a1bbb0;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
@@ -1016,8 +1016,8 @@ article .apply center .progress{
         transition: 500ms text-shadow;
       }
     .btn-shadow.btn-success, .btn-shadow.btn-outline-success {
-        -webkit-box-shadow: 5px 5px 0 #43cb8e, 4px 4px 0 #43cb8e, 3px 3px 0 #547969, 2px 2px 0 #547969, 1px 1px 0 #547969;
-        box-shadow: 5px 5px 0 #547969, 4px 4px 0 #547969, 3px 3px 0 #547969, 2px 2px 0 #547969, 1px 1px 0 #547969;
+        -webkit-box-shadow: 5px 5px 0 #a1bbb0, 4px 4px 0 #a1bbb0, 3px 3px 0 #a1bbb0, 2px 2px 0 #a1bbb0, 1px 1px 0 #547969;
+        box-shadow: 5px 5px 0 #a1bbb0, 4px 4px 0 #a1bbb0, 3px 3px 0 #a1bbb0, 2px 2px 0 #a1bbb0, 1px 1px 0 #547969;
         -webkit-transform: translate(-2px, -2px);
         -o-transform: translate(-2px, -2px);
         transform: translate(-2px, -2px);
