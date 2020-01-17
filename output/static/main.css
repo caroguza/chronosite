@@ -1016,8 +1016,8 @@ article .apply center .progress{
         transition: 500ms text-shadow;
       }
     .btn-shadow.btn-success, .btn-shadow.btn-outline-success {
-        -webkit-box-shadow: 5px 5px 0 #43cb8e, 4px 4px 0 #43cb8e, 3px 3px 0 #43cb8e, 2px 2px 0 #43cb8e, 1px 1px 0 #43cb8e;
-        box-shadow: 5px 5px 0 #43cb8e, 4px 4px 0 #43cb8e, 3px 3px 0 #43cb8e, 2px 2px 0 #43cb8e, 1px 1px 0 #43cb8e;
+        -webkit-box-shadow: 5px 5px 0 #43cb8e, 4px 4px 0 #43cb8e, 3px 3px 0 #547969, 2px 2px 0 #547969, 1px 1px 0 #547969;
+        box-shadow: 5px 5px 0 #547969, 4px 4px 0 #547969, 3px 3px 0 #547969, 2px 2px 0 #547969, 1px 1px 0 #547969;
         -webkit-transform: translate(-2px, -2px);
         -o-transform: translate(-2px, -2px);
         transform: translate(-2px, -2px);
